@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "npm run clear && parcel build src/index.html",
+    "build": "npm run clean && parcel build src/index.html",
     "build-no-minify": "npm run clear && parcel build src/index.html --no-minify",
-    "clear": "rm -rf dist",
-    "deploy": "git subtree push --prefix dist origin gh-pages",
+    "clean": "rm -rf dist/*",
+    "release": "npm run clean && npm run build",
+    "deploy": "cd dist && git add --all && git commit -m \"Release at $(date)\" && git push",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
