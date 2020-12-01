@@ -1,11 +1,13 @@
-@keyframes bg-animation {
-  from {
-    background-color: #ee787f;
-  }
-  to {
-    background-color: #ffffff;
-  }
-}
+@import "./../../node_modules/bootstrap/scss/bootstrap";
+
+
+$color-0: #fcf3d2;
+$color-1: #78D7B5;
+$color-2: #EEA27E;
+$color-3: #FBB03B;
+$color-4: #ED7880;
+$color-5: #41210A;
+$color-6: #EE787F;
 
 @keyframes slide-up {
   from {
@@ -29,80 +31,54 @@
   }
 }
 
-@keyframes fade-in-out {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 html,
 body {
   font-size: 16px;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background-color: #ee787f;
-  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
-  font-family: "Baloo Tammudu 2", cursive;
-
-  animation: bg-animation 3s ease 1s forwards;
+  background-color: $color-0;
 }
 
-.center-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-
-  animation: fade-in 1s ease forwards, slide-up 1s ease forwards;
+h1,
+h2,
+h3,
+h4,
+main {
+  font-family: "Comfortaa", cursive;
 }
 
 .logo {
-  width: 800px;
-  max-width: 80%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.intro {
+  height: 400px;
+}
+
+.bg-color-1 {
+  background-color: $color-1;
+}
+
+.bg-color-2 {
+  background-color: $color-2;
+}
+
+.bg-color-3 {
+  background-color: $color-3;
+}
+
+.bg-color-4 {
+  background-color: $color-4;
+}
+
+h2 {
+  background-color: $color-6;
+  color: $color-0;
+  border-radius: 40px;
+  border: solid 4px $color-5;
 }
 
 .info-container {
-  bottom: 0;
-  left: 0;
-}
-
-.info {
-  transform: translate3d(0, 40%, 0);
-  color: transparent;
-  opacity: 0;
-
-  animation: slide-up 2s ease 3s forwards;
-
-  h1 {
-    padding: 0;
-    margin: 0;
-    font-size: 1.2rem;
-    
-    // Medium devices (tablets, 768px and up)
-    @media (min-width: 768px) {
-        font-size: 2.5rem;
-        line-height: 4rem;
-    }
-  }
-
-  .charging {
-    opacity: 0;
-
-
-    animation: fade-in 2s ease-in-out 5s forwards;
-  }
+  background-color: $color-0;
+  border-radius: 40px;
+  border: solid 4px $color-5;
 }
