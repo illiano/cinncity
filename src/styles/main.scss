@@ -1,13 +1,12 @@
 @import "./../../node_modules/bootstrap/scss/bootstrap";
 
-
 $color-0: #fcf3d2;
-$color-1: #78D7B5;
-$color-2: #EEA27E;
-$color-3: #FBB03B;
-$color-4: #ED7880;
-$color-5: #41210A;
-$color-6: #EE787F;
+$color-1: #78d7b5;
+$color-2: #eea27e;
+$color-3: #fbb03b;
+$color-4: #ed7880;
+$color-5: #41210a;
+$color-6: #ee787f;
 
 @keyframes slide-up {
   from {
@@ -48,10 +47,25 @@ main {
 .logo {
   max-width: 100%;
   max-height: 100%;
+  z-index: 2;
 }
 
 .intro {
-  height: 400px;
+  height: 100vh;
+  min-height: 400px;
+}
+
+.intro-video {
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  
+}
+
+.intro-arrow {
+  bottom: 0;
+  color: $color-6;
+  z-index: 2;
 }
 
 .bg-color-1 {
