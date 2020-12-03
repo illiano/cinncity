@@ -105,15 +105,17 @@ main {
   background-color: $color-4;
 }
 
+.cc-border-radius {
+  border-radius: 40px;
+}
+
 h2 {
   background-color: $color-6;
   color: $color-0;
-  border-radius: 40px;
   border: solid 4px $color-5;
 }
 
 .info-container {
   background-color: $color-0;
-  border-radius: 40px;
   border: solid 4px $color-5;
 }
