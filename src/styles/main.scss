@@ -44,6 +44,24 @@ main {
   font-family: "Comfortaa", cursive;
 }
 
+@include media-breakpoint-down(sm) {
+  h1,.h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2,.h2 {
+    font-size: 1.6rem;
+  }
+  
+  h3,.h3 {
+    font-size: 1.4rem;
+  }
+  
+  h4,.h4 {
+    font-size: 1.2rem;
+  }
+}
+
 .logo {
   max-width: 100%;
   max-height: 100%;
@@ -53,13 +71,16 @@ main {
 .intro {
   height: 100vh;
   min-height: 400px;
+
+  @include media-breakpoint-down(sm) {
+    height: calc(100vh - 100px);
+  }
 }
 
 .intro-video {
   top: 0;
   left: 0;
   object-fit: cover;
-  
 }
 
 .intro-arrow {
